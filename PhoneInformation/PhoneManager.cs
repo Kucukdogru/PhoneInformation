@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -24,12 +24,24 @@ namespace PhoneInformation
             }
         }
 
+        public Model AddModel()
+        {
+            Model model5 = new Model
+            {
+                Id = 5,
+                BrandId = 1,
+                ModelName = "iPhone-11",
+                UnitPrice = 8999
+            };
+            return model5;
+        }
+
         public void GetInformation(Brand brand, Model model)
         {
                 Console.WriteLine("Model ID: " + model.Id);               
                 Console.WriteLine("Brand Name: " + brand.BrandName);
                 Console.WriteLine("Model Name: " + model.ModelName);
-                Console.WriteLine("Model ID: " + model.UnitPrice);
+                Console.WriteLine("Unit Price: " + model.UnitPrice);
         }
     }
 }
