@@ -26,14 +26,14 @@ namespace PhoneInformation
 
         public Model AddModel()
         {
-            Model model5 = new Model
+            Model model = new Model
             {
                 Id = 5,
                 BrandId = 1,
                 ModelName = "iPhone-11",
                 UnitPrice = 8999
             };
-            return model5;
+            return model;
         }
 
         public void GetInformation(Brand brand, Model model)
